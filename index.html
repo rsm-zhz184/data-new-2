@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Energy Usage Heatmaps</title>
+<style>
+ body{font-family:Arial,sans-serif;text-align:center;padding:24px;}
+ select{font-size:16px;padding:6px 10px;margin:0 8px 18px;}
+ iframe{width:94%;height:640px;border:1px solid #ccc;}
+</style>
+</head>
+<body>
+
+<h2>Energy Usage Heatmaps</h2>
+
+<select id="utilSelect" onchange="loadMap()">
+  <option value="Electrical" selected>Electrical</option>
+  <option value="Gas">Gas</option>
+  <option value="Hot_Water">Hot Water</option>
+  <option value="Solar_PV">Solar PV</option>
+  <option value="ReClaimed_Water">ReClaimed Water</option>
+  <option value="Chilled_Water">Chilled Water</option>
+</select>
+
+<select id="compareSelect" onchange="loadMap()">
+  <option value="Self"  selected>Self (CV)</option>
+  <option value="Class">Same Class (Z‑score)</option>
+</select>
+
+<select id="classSelect" onchange="toggleClass()"></select>
+
+<iframe id="mapFrame" src="maps/Electrical_Self.html"></iframe>
+
+<script>
+// ① 填充 classification 下拉
+fetch('classes.json')
+ .then(r=>r.json())
+ .then(list=>{
+    const sel=document.getElementById('classSelect');
+    sel.innerHTML='<option value="All" selected>All</option>'+
+                  list.map(c=>`<option value="${c}">${c}</option>`).join('');
+ });
+
+// ② 切换 iframe (只依赖 Utility & Compare)
+function loadMap(){
+  const util=document.getElementById('utilSelect').value;
+  const cmp =document.getElementById('compareSelect').value;
+  document.getElementById('mapFrame').src=`maps/${util}_${cmp}.html`;
+  // 延迟执行 toggleClass 直到 iframe 加载完
+  setTimeout(toggleClass, 400);
+}
+
+// ③ 切换分类图层：调用 iframe 内的 Leaflet LayerControl
+function toggleClass(){
+  const cls = document.getElementById('classSelect').value; // All / Lab ...
+  const iframe = document.getElementById('mapFrame').contentWindow;
+  if(!iframe || !iframe.L) return;   // Leaflet 还没加载好
+
+  // 遍历图层并勾选只属于目标分类
+  Object.values(iframe.L.layerGroup ? iframe.L.layerGroup.getLayers() : iframe.L.control._layers)
+        .forEach(l => {
+          const name = l.name || l.layer?.options?.name || "";
+          const on   = (cls==="All") ? name.endsWith("-Self")||name.endsWith("-Class")
+                   :   name.startsWith(cls+"-");
+          if(l.layer){                // Leaflet v1.x LayerControl internal obj
+              if(on) iframe.map.addLayer(l.layer);
+              else   iframe.map.removeLayer(l.layer);
+          }
+        });
+}
+</script>
+</body>
+</html>

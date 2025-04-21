@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fcfa5d7cca75061f86345dbea9115d3b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fcfa5d7cca75061f86345dbea9115d3b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fcfa5d7cca75061f86345dbea9115d3b = L.map(
+                "map_fcfa5d7cca75061f86345dbea9115d3b",
+                {
+                    center: [32.877753827272734, -117.2330746909091],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5f6c9c993d01f31dc70823a6608c9112 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5f6c9c993d01f31dc70823a6608c9112.addTo(map_fcfa5d7cca75061f86345dbea9115d3b);
+        
+    
+            var feature_group_83de4e4344db5071840dff5b95e849bf = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_805ea4fff3a811ef8b0332c44cf8100f = L.circleMarker(
+                [32.8789781, -117.2269864],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_9143f578541c98dd8d8f4e249af0c3a8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_930cc31b145d357722ea30f5a9032ea3 = $(`<div id="html_930cc31b145d357722ea30f5a9032ea3" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Altman Clinical Translational Research Institute</b><br>             🏷️ <i>Research</i><br>             📊 CV=0.47           </div></div>`)[0];
+                popup_9143f578541c98dd8d8f4e249af0c3a8.setContent(html_930cc31b145d357722ea30f5a9032ea3);
+            
+        
+
+        circle_marker_805ea4fff3a811ef8b0332c44cf8100f.bindPopup(popup_9143f578541c98dd8d8f4e249af0c3a8)
+        ;
+
+        
+    
+    
+            var circle_marker_40d001efdb4da60da456827e0e9af0a6 = L.circleMarker(
+                [32.881168, -117.2343605],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_8aea9ab7705d610eda14b0adf3755448 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a1c434d8b8d0d3027ed42147203319c0 = $(`<div id="html_a1c434d8b8d0d3027ed42147203319c0" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Biology Building</b><br>             🏷️ <i>Research</i><br>             📊 CV=0.62           </div></div>`)[0];
+                popup_8aea9ab7705d610eda14b0adf3755448.setContent(html_a1c434d8b8d0d3027ed42147203319c0);
+            
+        
+
+        circle_marker_40d001efdb4da60da456827e0e9af0a6.bindPopup(popup_8aea9ab7705d610eda14b0adf3755448)
+        ;
+
+        
+    
+    
+            var circle_marker_415426bcfec7d0a63259a783aab37b20 = L.circleMarker(
+                [32.8328112, -117.2712717],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_6ee8c2e3b4a1e79774a76a44509a8ea7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f23d2f2ea892bb47c70347dd2d8e7a68 = $(`<div id="html_f23d2f2ea892bb47c70347dd2d8e7a68" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Campus Point Parking West</b><br>             🏷️ <i>Parking Structure</i><br>             📊 CV=0.60           </div></div>`)[0];
+                popup_6ee8c2e3b4a1e79774a76a44509a8ea7.setContent(html_f23d2f2ea892bb47c70347dd2d8e7a68);
+            
+        
+
+        circle_marker_415426bcfec7d0a63259a783aab37b20.bindPopup(popup_6ee8c2e3b4a1e79774a76a44509a8ea7)
+        ;
+
+        
+    
+    
+            var circle_marker_919fec37e8eb0db8473f3be4e2715ef1 = L.circleMarker(
+                [32.8769868, -117.2208431],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_1b995ccefc3a7e5750466964a9884e9e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d9e68700b553cd8c047a63a9a8cf7f3b = $(`<div id="html_d9e68700b553cd8c047a63a9a8cf7f3b" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Center for Novel Therapeutics</b><br>             🏷️ <i>Research</i><br>             📊 CV=0.35           </div></div>`)[0];
+                popup_1b995ccefc3a7e5750466964a9884e9e.setContent(html_d9e68700b553cd8c047a63a9a8cf7f3b);
+            
+        
+
+        circle_marker_919fec37e8eb0db8473f3be4e2715ef1.bindPopup(popup_1b995ccefc3a7e5750466964a9884e9e)
+        ;
+
+        
+    
+    
+            var circle_marker_f72ec28c504b4d8d3c58a0818036acd0 = L.circleMarker(
+                [32.8773757, -117.2250874],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_04b975607df6d3c722a793fd555cc42f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e3db380a65ef678be9b0099ba2d142c5 = $(`<div id="html_e3db380a65ef678be9b0099ba2d142c5" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>East Campus Medical Center Central Plant</b><br>             🏷️ <i>Office</i><br>             📊 CV=1.42           </div></div>`)[0];
+                popup_04b975607df6d3c722a793fd555cc42f.setContent(html_e3db380a65ef678be9b0099ba2d142c5);
+            
+        
+
+        circle_marker_f72ec28c504b4d8d3c58a0818036acd0.bindPopup(popup_04b975607df6d3c722a793fd555cc42f)
+        ;
+
+        
+    
+    
+            var circle_marker_b82be792ff6ab4eb075dbd9a3868e02c = L.circleMarker(
+                [32.8765479, -117.2275567],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_857f80b8df73fcfa3056c67bd7dc0ee6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cc519103ead356f580859b5cf8127140 = $(`<div id="html_cc519103ead356f580859b5cf8127140" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>East Campus Office Building</b><br>             🏷️ <i>Office</i><br>             📊 CV=0.42           </div></div>`)[0];
+                popup_857f80b8df73fcfa3056c67bd7dc0ee6.setContent(html_cc519103ead356f580859b5cf8127140);
+            
+        
+
+        circle_marker_b82be792ff6ab4eb075dbd9a3868e02c.bindPopup(popup_857f80b8df73fcfa3056c67bd7dc0ee6)
+        ;
+
+        
+    
+    
+            var circle_marker_87a29314dc90002b2e19b58a8ffde87a = L.circleMarker(
+                [32.8792506, -117.233073],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_6224aa80b3b05fba958f02bb53f5faa7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_65bc1097af51306dc73446f506f2d88e = $(`<div id="html_65bc1097af51306dc73446f506f2d88e" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Epstein Family Amphitheater</b><br>             🏷️ <i>nan</i><br>             📊 CV=1.73           </div></div>`)[0];
+                popup_6224aa80b3b05fba958f02bb53f5faa7.setContent(html_65bc1097af51306dc73446f506f2d88e);
+            
+        
+
+        circle_marker_87a29314dc90002b2e19b58a8ffde87a.bindPopup(popup_6224aa80b3b05fba958f02bb53f5faa7)
+        ;
+
+        
+    
+    
+            var circle_marker_bcdea9d5d72da9ab5a9625a1ac065263 = L.circleMarker(
+                [32.8794862, -117.2229646],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_03e72ea1e383346d1f73059035ac87a0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c54eab8406939863f0c0213ce03fff14 = $(`<div id="html_c54eab8406939863f0c0213ce03fff14" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Hamilton Glaucoma and Jacobs Retina Center</b><br>             🏷️ <i>Research</i><br>             📊 CV=0.42           </div></div>`)[0];
+                popup_03e72ea1e383346d1f73059035ac87a0.setContent(html_c54eab8406939863f0c0213ce03fff14);
+            
+        
+
+        circle_marker_bcdea9d5d72da9ab5a9625a1ac065263.bindPopup(popup_03e72ea1e383346d1f73059035ac87a0)
+        ;
+
+        
+    
+    
+            var circle_marker_9f44b8df25c706b806adfb0a3f21cdca = L.circleMarker(
+                [32.8837791, -117.2394026],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_ab38e95ddb71fd0d7d0e96a93229e3a5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7c546613d04865dbc5030b4222cdb8e5 = $(`<div id="html_7c546613d04865dbc5030b4222cdb8e5" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Hopkins Parking</b><br>             🏷️ <i>Parking Structure</i><br>             📊 CV=0.79           </div></div>`)[0];
+                popup_ab38e95ddb71fd0d7d0e96a93229e3a5.setContent(html_7c546613d04865dbc5030b4222cdb8e5);
+            
+        
+
+        circle_marker_9f44b8df25c706b806adfb0a3f21cdca.bindPopup(popup_ab38e95ddb71fd0d7d0e96a93229e3a5)
+        ;
+
+        
+    
+    
+            var circle_marker_5f7579e1ef6ee21d01ebeb6b0d60c23a = L.circleMarker(
+                [32.8777169, -117.2262295],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_4ae44c9367b7cec2b559568acfc78d15 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_27d9db390dae3ef433e8ab9cf50e72c2 = $(`<div id="html_27d9db390dae3ef433e8ab9cf50e72c2" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Jacobs Medical Center - Bed Tower</b><br>             🏷️ <i>Health</i><br>             📊 CV=0.49           </div></div>`)[0];
+                popup_4ae44c9367b7cec2b559568acfc78d15.setContent(html_27d9db390dae3ef433e8ab9cf50e72c2);
+            
+        
+
+        circle_marker_5f7579e1ef6ee21d01ebeb6b0d60c23a.bindPopup(popup_4ae44c9367b7cec2b559568acfc78d15)
+        ;
+
+        
+    
+    
+            var circle_marker_5a4895f41b27af28100190829b929f3e = L.circleMarker(
+                [32.8774194, -117.2196033],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_f6953202f95a8ba7f60c1e8f903c286a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_02a0179fce4cfdbc29f8a0d616103b8a = $(`<div id="html_02a0179fce4cfdbc29f8a0d616103b8a" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>La Jolla Institute for Immunology</b><br>             🏷️ <i>Affiliate</i><br>             📊 CV=0.56           </div></div>`)[0];
+                popup_f6953202f95a8ba7f60c1e8f903c286a.setContent(html_02a0179fce4cfdbc29f8a0d616103b8a);
+            
+        
+
+        circle_marker_5a4895f41b27af28100190829b929f3e.bindPopup(popup_f6953202f95a8ba7f60c1e8f903c286a)
+        ;
+
+        
+    
+    
+            var circle_marker_194175052ce8a5d2fee49edf4e6fc9f1 = L.circleMarker(
+                [32.8767056, -117.2261318],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_579e049b5cb95b94872099bf30a43db1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_583fc480f8878c81e3e259b8c3bb322f = $(`<div id="html_583fc480f8878c81e3e259b8c3bb322f" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Medical Center Modular 1</b><br>             🏷️ <i>Office</i><br>             📊 CV=0.60           </div></div>`)[0];
+                popup_579e049b5cb95b94872099bf30a43db1.setContent(html_583fc480f8878c81e3e259b8c3bb322f);
+            
+        
+
+        circle_marker_194175052ce8a5d2fee49edf4e6fc9f1.bindPopup(popup_579e049b5cb95b94872099bf30a43db1)
+        ;
+
+        
+    
+    
+            var circle_marker_98a2ef7b8b932d51876295945e1dfddc = L.circleMarker(
+                [32.8762761, -117.2226484],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_6380ef7fea1544928915e710119c07a6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bb2dbe9cf9e029925a705b2d7bc146ea = $(`<div id="html_bb2dbe9cf9e029925a705b2d7bc146ea" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Mesa Canyon Parking</b><br>             🏷️ <i>Parking Structure</i><br>             📊 CV=0.56           </div></div>`)[0];
+                popup_6380ef7fea1544928915e710119c07a6.setContent(html_bb2dbe9cf9e029925a705b2d7bc146ea);
+            
+        
+
+        circle_marker_98a2ef7b8b932d51876295945e1dfddc.bindPopup(popup_6380ef7fea1544928915e710119c07a6)
+        ;
+
+        
+    
+    
+            var circle_marker_a112081d2c898476c8d4e1632e5b61a8 = L.circleMarker(
+                [32.8786467, -117.2230577],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_eec5f97395d2778dff16dbcd6a6010e3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8cee249d765debd1df0e302c822a9928 = $(`<div id="html_8cee249d765debd1df0e302c822a9928" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Moores Cancer Center</b><br>             🏷️ <i>Research</i><br>             📊 CV=0.75           </div></div>`)[0];
+                popup_eec5f97395d2778dff16dbcd6a6010e3.setContent(html_8cee249d765debd1df0e302c822a9928);
+            
+        
+
+        circle_marker_a112081d2c898476c8d4e1632e5b61a8.bindPopup(popup_eec5f97395d2778dff16dbcd6a6010e3)
+        ;
+
+        
+    
+    
+            var circle_marker_8624fbe08c221b6bced9a151b6722dbc = L.circleMarker(
+                [32.8700747, -117.251156],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_44b8ec9159ca2b2aadbb245243a735f4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_339e4f66fc77cca4503d1faa0b0eb816 = $(`<div id="html_339e4f66fc77cca4503d1faa0b0eb816" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>NOAA Southwest Fisheries Science Center</b><br>             🏷️ <i>Affiliate</i><br>             📊 CV=1.69           </div></div>`)[0];
+                popup_44b8ec9159ca2b2aadbb245243a735f4.setContent(html_339e4f66fc77cca4503d1faa0b0eb816);
+            
+        
+
+        circle_marker_8624fbe08c221b6bced9a151b6722dbc.bindPopup(popup_44b8ec9159ca2b2aadbb245243a735f4)
+        ;
+
+        
+    
+    
+            var circle_marker_5edeb7543f9491d062b0373f1290b666 = L.circleMarker(
+                [32.8865929, -117.2411101],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_875cb3dc212cd84701fe17e37c423f70 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3ec211880480321a476eb20654c2a1c5 = $(`<div id="html_3ec211880480321a476eb20654c2a1c5" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Otterson Hall</b><br>             🏷️ <i>Office</i><br>             📊 CV=0.36           </div></div>`)[0];
+                popup_875cb3dc212cd84701fe17e37c423f70.setContent(html_3ec211880480321a476eb20654c2a1c5);
+            
+        
+
+        circle_marker_5edeb7543f9491d062b0373f1290b666.bindPopup(popup_875cb3dc212cd84701fe17e37c423f70)
+        ;
+
+        
+    
+    
+            var circle_marker_1e795e4e50e5ddb7948768b626c69d23 = L.circleMarker(
+                [32.8851041, -117.2404977],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_182beb400940b4933cb24189a5b1a7e6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bddc5a3e6ec3fb7d263a9d58e1bea7f0 = $(`<div id="html_bddc5a3e6ec3fb7d263a9d58e1bea7f0" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>RIMAC</b><br>             🏷️ <i>Recreation</i><br>             📊 CV=0.58           </div></div>`)[0];
+                popup_182beb400940b4933cb24189a5b1a7e6.setContent(html_bddc5a3e6ec3fb7d263a9d58e1bea7f0);
+            
+        
+
+        circle_marker_1e795e4e50e5ddb7948768b626c69d23.bindPopup(popup_182beb400940b4933cb24189a5b1a7e6)
+        ;
+
+        
+    
+    
+            var circle_marker_1ae20e823222df3618f282fa21fd37af = L.circleMarker(
+                [32.8843896, -117.2391717],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_a6032cfb6a05be568a9c5a491b311c4b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9d95e8296e04eb40c9868745e48dd30a = $(`<div id="html_9d95e8296e04eb40c9868745e48dd30a" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>San Diego Supercomputer Center</b><br>             🏷️ <i>Research</i><br>             📊 CV=0.41           </div></div>`)[0];
+                popup_a6032cfb6a05be568a9c5a491b311c4b.setContent(html_9d95e8296e04eb40c9868745e48dd30a);
+            
+        
+
+        circle_marker_1ae20e823222df3618f282fa21fd37af.bindPopup(popup_a6032cfb6a05be568a9c5a491b311c4b)
+        ;
+
+        
+    
+    
+            var circle_marker_9e7baff3ffde923adfb6cb705637cc27 = L.circleMarker(
+                [32.8794451, -117.2229886],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_cf93f2afa80940b4361c446124d01756 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_177c2fcaf55f7501f883da169d2ceb2a = $(`<div id="html_177c2fcaf55f7501f883da169d2ceb2a" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Shiley Eye Institute</b><br>             🏷️ <i>Mixed</i><br>             📊 CV=1.41           </div></div>`)[0];
+                popup_cf93f2afa80940b4361c446124d01756.setContent(html_177c2fcaf55f7501f883da169d2ceb2a);
+            
+        
+
+        circle_marker_9e7baff3ffde923adfb6cb705637cc27.bindPopup(popup_cf93f2afa80940b4361c446124d01756)
+        ;
+
+        
+    
+    
+            var circle_marker_9425146fbf33307e197b7cae55833d6b = L.circleMarker(
+                [32.8839884, -117.2404494],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_5899e6ee59d607f54f51bcaf9fe1a27e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9fde26a65af63788faad66d99e574063 = $(`<div id="html_9fde26a65af63788faad66d99e574063" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Social Sciences Building</b><br>             🏷️ <i>Office</i><br>             📊 CV=0.69           </div></div>`)[0];
+                popup_5899e6ee59d607f54f51bcaf9fe1a27e.setContent(html_9fde26a65af63788faad66d99e574063);
+            
+        
+
+        circle_marker_9425146fbf33307e197b7cae55833d6b.bindPopup(popup_5899e6ee59d607f54f51bcaf9fe1a27e)
+        ;
+
+        
+    
+    
+            var circle_marker_f851cb38930830196545ddd157b1bc68 = L.circleMarker(
+                [32.8800218, -117.2329402],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_a7fa3c38cc8353599759c5327d8316f8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e5079e90f33f1f4f14ca25d7f00d467d = $(`<div id="html_e5079e90f33f1f4f14ca25d7f00d467d" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Structural and Materials Engineering Building</b><br>             🏷️ <i>Research</i><br>             📊 CV=0.46           </div></div>`)[0];
+                popup_a7fa3c38cc8353599759c5327d8316f8.setContent(html_e5079e90f33f1f4f14ca25d7f00d467d);
+            
+        
+
+        circle_marker_f851cb38930830196545ddd157b1bc68.bindPopup(popup_a7fa3c38cc8353599759c5327d8316f8)
+        ;
+
+        
+    
+    
+            var circle_marker_e4c8de537a5712267c679ce67d3add44 = L.circleMarker(
+                [32.8878193, -117.2401128],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83de4e4344db5071840dff5b95e849bf);
+        
+    
+        var popup_e6c9996f506c9d7d16b2d458e427f0a2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_21209f08619f8fa10209d9bb3fb37047 = $(`<div id="html_21209f08619f8fa10209d9bb3fb37047" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Triton Stadium</b><br>             🏷️ <i>Other</i><br>             📊 CV=0.43           </div></div>`)[0];
+                popup_e6c9996f506c9d7d16b2d458e427f0a2.setContent(html_21209f08619f8fa10209d9bb3fb37047);
+            
+        
+
+        circle_marker_e4c8de537a5712267c679ce67d3add44.bindPopup(popup_e6c9996f506c9d7d16b2d458e427f0a2)
+        ;
+
+        
+    
+    
+            feature_group_83de4e4344db5071840dff5b95e849bf.addTo(map_fcfa5d7cca75061f86345dbea9115d3b);
+        
+    
+            var feature_group_14cc2dd34c56e11124d9c33957adffc8 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_fb04ff6c2a1cf78e6563977f8c704998 = L.circleMarker(
+                [32.8774194, -117.2196033],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_14cc2dd34c56e11124d9c33957adffc8);
+        
+    
+        var popup_47de5fc614990a6d8163f57979e73f12 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f0384e711a835b8cb4ae337f4e6b86af = $(`<div id="html_f0384e711a835b8cb4ae337f4e6b86af" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>La Jolla Institute for Immunology</b><br>             🏷️ <i>Affiliate</i><br>             📊 CV=0.56           </div></div>`)[0];
+                popup_47de5fc614990a6d8163f57979e73f12.setContent(html_f0384e711a835b8cb4ae337f4e6b86af);
+            
+        
+
+        circle_marker_fb04ff6c2a1cf78e6563977f8c704998.bindPopup(popup_47de5fc614990a6d8163f57979e73f12)
+        ;
+
+        
+    
+    
+            var circle_marker_54234a414e5d5ff303056b2b39dc7552 = L.circleMarker(
+                [32.8700747, -117.251156],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_14cc2dd34c56e11124d9c33957adffc8);
+        
+    
+        var popup_6dbe5b7502f2fbfc5963a560c7ca04c0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_93f8ed6e69ab3a586c4036596ca7812c = $(`<div id="html_93f8ed6e69ab3a586c4036596ca7812c" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>NOAA Southwest Fisheries Science Center</b><br>             🏷️ <i>Affiliate</i><br>             📊 CV=1.69           </div></div>`)[0];
+                popup_6dbe5b7502f2fbfc5963a560c7ca04c0.setContent(html_93f8ed6e69ab3a586c4036596ca7812c);
+            
+        
+
+        circle_marker_54234a414e5d5ff303056b2b39dc7552.bindPopup(popup_6dbe5b7502f2fbfc5963a560c7ca04c0)
+        ;
+
+        
+    
+    
+            var feature_group_f744d2b7928656b7181dcd9abe779518 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_226ff4ce8d94c796a39454397408fbb1 = L.circleMarker(
+                [32.8777169, -117.2262295],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f744d2b7928656b7181dcd9abe779518);
+        
+    
+        var popup_b805723bd2db5749cd17d2eb29e2eaec = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3ac353589ccaf25a9aaeafe408a4a610 = $(`<div id="html_3ac353589ccaf25a9aaeafe408a4a610" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Jacobs Medical Center - Bed Tower</b><br>             🏷️ <i>Health</i><br>             📊 CV=0.49           </div></div>`)[0];
+                popup_b805723bd2db5749cd17d2eb29e2eaec.setContent(html_3ac353589ccaf25a9aaeafe408a4a610);
+            
+        
+
+        circle_marker_226ff4ce8d94c796a39454397408fbb1.bindPopup(popup_b805723bd2db5749cd17d2eb29e2eaec)
+        ;
+
+        
+    
+    
+            var feature_group_03ab52c21626587471b78d2179dbe145 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_3401b18dd2d06d67f2b6785b73c277f2 = L.circleMarker(
+                [32.8794451, -117.2229886],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_03ab52c21626587471b78d2179dbe145);
+        
+    
+        var popup_1225291bd8808c5c8395881bb5de8b21 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_683f333bf134315bdb77ea9a0b12a9d8 = $(`<div id="html_683f333bf134315bdb77ea9a0b12a9d8" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Shiley Eye Institute</b><br>             🏷️ <i>Mixed</i><br>             📊 CV=1.41           </div></div>`)[0];
+                popup_1225291bd8808c5c8395881bb5de8b21.setContent(html_683f333bf134315bdb77ea9a0b12a9d8);
+            
+        
+
+        circle_marker_3401b18dd2d06d67f2b6785b73c277f2.bindPopup(popup_1225291bd8808c5c8395881bb5de8b21)
+        ;
+
+        
+    
+    
+            var feature_group_a9863e29695e1fcca37f62bc0358de9e = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_b5de9c7812e6296ab03c67e64f7f27f7 = L.circleMarker(
+                [32.8773757, -117.2250874],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a9863e29695e1fcca37f62bc0358de9e);
+        
+    
+        var popup_614ffacdeb36cd08222e0833dfe5b1b2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_348dae5f9456f776b955d801b491f097 = $(`<div id="html_348dae5f9456f776b955d801b491f097" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>East Campus Medical Center Central Plant</b><br>             🏷️ <i>Office</i><br>             📊 CV=1.42           </div></div>`)[0];
+                popup_614ffacdeb36cd08222e0833dfe5b1b2.setContent(html_348dae5f9456f776b955d801b491f097);
+            
+        
+
+        circle_marker_b5de9c7812e6296ab03c67e64f7f27f7.bindPopup(popup_614ffacdeb36cd08222e0833dfe5b1b2)
+        ;
+
+        
+    
+    
+            var circle_marker_6f2dc159c3c233ef3ade4204c6120e3f = L.circleMarker(
+                [32.8765479, -117.2275567],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a9863e29695e1fcca37f62bc0358de9e);
+        
+    
+        var popup_5b21043127d26e95d5c71f2f06a7ae83 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_41d033ca5d2d466e122895e3f3650d55 = $(`<div id="html_41d033ca5d2d466e122895e3f3650d55" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>East Campus Office Building</b><br>             🏷️ <i>Office</i><br>             📊 CV=0.42           </div></div>`)[0];
+                popup_5b21043127d26e95d5c71f2f06a7ae83.setContent(html_41d033ca5d2d466e122895e3f3650d55);
+            
+        
+
+        circle_marker_6f2dc159c3c233ef3ade4204c6120e3f.bindPopup(popup_5b21043127d26e95d5c71f2f06a7ae83)
+        ;
+
+        
+    
+    
+            var circle_marker_726c247797e5c20fa04446bacfffe0d8 = L.circleMarker(
+                [32.8767056, -117.2261318],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a9863e29695e1fcca37f62bc0358de9e);
+        
+    
+        var popup_dc33f2425e0d5497015bfa02705d533a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dc559f6d5c50a7eb07250e08169d1ffd = $(`<div id="html_dc559f6d5c50a7eb07250e08169d1ffd" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Medical Center Modular 1</b><br>             🏷️ <i>Office</i><br>             📊 CV=0.60           </div></div>`)[0];
+                popup_dc33f2425e0d5497015bfa02705d533a.setContent(html_dc559f6d5c50a7eb07250e08169d1ffd);
+            
+        
+
+        circle_marker_726c247797e5c20fa04446bacfffe0d8.bindPopup(popup_dc33f2425e0d5497015bfa02705d533a)
+        ;
+
+        
+    
+    
+            var circle_marker_58db2fd15e412b8845a00f4b20941cde = L.circleMarker(
+                [32.8865929, -117.2411101],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a9863e29695e1fcca37f62bc0358de9e);
+        
+    
+        var popup_831ff080c74d09f02ea8cfac7ebd1a04 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ade0061caba34766afac55d716a24c39 = $(`<div id="html_ade0061caba34766afac55d716a24c39" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Otterson Hall</b><br>             🏷️ <i>Office</i><br>             📊 CV=0.36           </div></div>`)[0];
+                popup_831ff080c74d09f02ea8cfac7ebd1a04.setContent(html_ade0061caba34766afac55d716a24c39);
+            
+        
+
+        circle_marker_58db2fd15e412b8845a00f4b20941cde.bindPopup(popup_831ff080c74d09f02ea8cfac7ebd1a04)
+        ;
+
+        
+    
+    
+            var circle_marker_f026414aee2819f907eee5a423529501 = L.circleMarker(
+                [32.8839884, -117.2404494],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a9863e29695e1fcca37f62bc0358de9e);
+        
+    
+        var popup_d519a5d9a5de4a89907c87b01143d505 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ab94f176d70c7974a7b850daf0512e20 = $(`<div id="html_ab94f176d70c7974a7b850daf0512e20" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Social Sciences Building</b><br>             🏷️ <i>Office</i><br>             📊 CV=0.69           </div></div>`)[0];
+                popup_d519a5d9a5de4a89907c87b01143d505.setContent(html_ab94f176d70c7974a7b850daf0512e20);
+            
+        
+
+        circle_marker_f026414aee2819f907eee5a423529501.bindPopup(popup_d519a5d9a5de4a89907c87b01143d505)
+        ;
+
+        
+    
+    
+            var feature_group_639cc7af4c140ad5dedf60fdfb7427be = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_798af9eeec68e670175dcdfca643e07a = L.circleMarker(
+                [32.8878193, -117.2401128],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_639cc7af4c140ad5dedf60fdfb7427be);
+        
+    
+        var popup_b4aac81a65b7a2d9eadf7d8f841f0e88 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ee06c3b57cd65b47b5be90f89ab232fb = $(`<div id="html_ee06c3b57cd65b47b5be90f89ab232fb" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Triton Stadium</b><br>             🏷️ <i>Other</i><br>             📊 CV=0.43           </div></div>`)[0];
+                popup_b4aac81a65b7a2d9eadf7d8f841f0e88.setContent(html_ee06c3b57cd65b47b5be90f89ab232fb);
+            
+        
+
+        circle_marker_798af9eeec68e670175dcdfca643e07a.bindPopup(popup_b4aac81a65b7a2d9eadf7d8f841f0e88)
+        ;
+
+        
+    
+    
+            var feature_group_df443c1b5f585f1d2504b596fb4e51f5 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_e31f1b325f287064bb0c85fddd0be8b9 = L.circleMarker(
+                [32.8328112, -117.2712717],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_df443c1b5f585f1d2504b596fb4e51f5);
+        
+    
+        var popup_539863c21e5a4a68b17b0a633dc8c6d3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_31b41a8aef37b03cf6e9c80c7088508c = $(`<div id="html_31b41a8aef37b03cf6e9c80c7088508c" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Campus Point Parking West</b><br>             🏷️ <i>Parking Structure</i><br>             📊 CV=0.60           </div></div>`)[0];
+                popup_539863c21e5a4a68b17b0a633dc8c6d3.setContent(html_31b41a8aef37b03cf6e9c80c7088508c);
+            
+        
+
+        circle_marker_e31f1b325f287064bb0c85fddd0be8b9.bindPopup(popup_539863c21e5a4a68b17b0a633dc8c6d3)
+        ;
+
+        
+    
+    
+            var circle_marker_bf2f6198a4c3da8c139e8f5aae55b6e7 = L.circleMarker(
+                [32.8837791, -117.2394026],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_df443c1b5f585f1d2504b596fb4e51f5);
+        
+    
+        var popup_985e4ab7b44320e0cde69e6b77b17ae7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a3f5baf4158e13a67b893d97390d5829 = $(`<div id="html_a3f5baf4158e13a67b893d97390d5829" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Hopkins Parking</b><br>             🏷️ <i>Parking Structure</i><br>             📊 CV=0.79           </div></div>`)[0];
+                popup_985e4ab7b44320e0cde69e6b77b17ae7.setContent(html_a3f5baf4158e13a67b893d97390d5829);
+            
+        
+
+        circle_marker_bf2f6198a4c3da8c139e8f5aae55b6e7.bindPopup(popup_985e4ab7b44320e0cde69e6b77b17ae7)
+        ;
+
+        
+    
+    
+            var circle_marker_bd6f036747318a9fb7ee708c2201f3ee = L.circleMarker(
+                [32.8762761, -117.2226484],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_df443c1b5f585f1d2504b596fb4e51f5);
+        
+    
+        var popup_641afbaf93492de8a7f34dfc45a7fd4f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9837183650c727a07c3cba61f7a48f9e = $(`<div id="html_9837183650c727a07c3cba61f7a48f9e" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Mesa Canyon Parking</b><br>             🏷️ <i>Parking Structure</i><br>             📊 CV=0.56           </div></div>`)[0];
+                popup_641afbaf93492de8a7f34dfc45a7fd4f.setContent(html_9837183650c727a07c3cba61f7a48f9e);
+            
+        
+
+        circle_marker_bd6f036747318a9fb7ee708c2201f3ee.bindPopup(popup_641afbaf93492de8a7f34dfc45a7fd4f)
+        ;
+
+        
+    
+    
+            var feature_group_787b94af88431f5ea2f84fd27952eef4 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_ae948b79856b4b175a2fbbb24eb831a9 = L.circleMarker(
+                [32.8851041, -117.2404977],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_787b94af88431f5ea2f84fd27952eef4);
+        
+    
+        var popup_d16016ae0626c02a22afcf81a7a9e73f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_de8542bb4d91af6a62a39428c6d836a7 = $(`<div id="html_de8542bb4d91af6a62a39428c6d836a7" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>RIMAC</b><br>             🏷️ <i>Recreation</i><br>             📊 CV=0.58           </div></div>`)[0];
+                popup_d16016ae0626c02a22afcf81a7a9e73f.setContent(html_de8542bb4d91af6a62a39428c6d836a7);
+            
+        
+
+        circle_marker_ae948b79856b4b175a2fbbb24eb831a9.bindPopup(popup_d16016ae0626c02a22afcf81a7a9e73f)
+        ;
+
+        
+    
+    
+            var feature_group_83640a07e83987d9b5cfb6d21c9cc87c = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_2085fa654cced9ecf7444cfd489a6ef9 = L.circleMarker(
+                [32.8789781, -117.2269864],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83640a07e83987d9b5cfb6d21c9cc87c);
+        
+    
+        var popup_c312306c4e3427bf2c7b86fed98dc814 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0430af25846d479a2ffcd24204ce6ab9 = $(`<div id="html_0430af25846d479a2ffcd24204ce6ab9" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Altman Clinical Translational Research Institute</b><br>             🏷️ <i>Research</i><br>             📊 CV=0.47           </div></div>`)[0];
+                popup_c312306c4e3427bf2c7b86fed98dc814.setContent(html_0430af25846d479a2ffcd24204ce6ab9);
+            
+        
+
+        circle_marker_2085fa654cced9ecf7444cfd489a6ef9.bindPopup(popup_c312306c4e3427bf2c7b86fed98dc814)
+        ;
+
+        
+    
+    
+            var circle_marker_fc0859ebf2771acfb29966a6ec9d0aaf = L.circleMarker(
+                [32.881168, -117.2343605],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83640a07e83987d9b5cfb6d21c9cc87c);
+        
+    
+        var popup_9636dde95ba4505e66a925000325ed26 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_57a22ca691dd876729716348ea4a46e3 = $(`<div id="html_57a22ca691dd876729716348ea4a46e3" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Biology Building</b><br>             🏷️ <i>Research</i><br>             📊 CV=0.62           </div></div>`)[0];
+                popup_9636dde95ba4505e66a925000325ed26.setContent(html_57a22ca691dd876729716348ea4a46e3);
+            
+        
+
+        circle_marker_fc0859ebf2771acfb29966a6ec9d0aaf.bindPopup(popup_9636dde95ba4505e66a925000325ed26)
+        ;
+
+        
+    
+    
+            var circle_marker_6275aaf6d293b19b68202b0b7beb94cc = L.circleMarker(
+                [32.8769868, -117.2208431],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83640a07e83987d9b5cfb6d21c9cc87c);
+        
+    
+        var popup_49885ef1bb02c13969bb23bf2bb39fb1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d94200b4406e07576a6dff00fb06b1c3 = $(`<div id="html_d94200b4406e07576a6dff00fb06b1c3" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Center for Novel Therapeutics</b><br>             🏷️ <i>Research</i><br>             📊 CV=0.35           </div></div>`)[0];
+                popup_49885ef1bb02c13969bb23bf2bb39fb1.setContent(html_d94200b4406e07576a6dff00fb06b1c3);
+            
+        
+
+        circle_marker_6275aaf6d293b19b68202b0b7beb94cc.bindPopup(popup_49885ef1bb02c13969bb23bf2bb39fb1)
+        ;
+
+        
+    
+    
+            var circle_marker_84ad4bba4dd5a3ce1315ac0768a4495a = L.circleMarker(
+                [32.8794862, -117.2229646],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83640a07e83987d9b5cfb6d21c9cc87c);
+        
+    
+        var popup_1d8dc4a964392a4b3e32d7ef58cbaa13 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2f4df5503b49069a2fe9455d7ee4621c = $(`<div id="html_2f4df5503b49069a2fe9455d7ee4621c" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Hamilton Glaucoma and Jacobs Retina Center</b><br>             🏷️ <i>Research</i><br>             📊 CV=0.42           </div></div>`)[0];
+                popup_1d8dc4a964392a4b3e32d7ef58cbaa13.setContent(html_2f4df5503b49069a2fe9455d7ee4621c);
+            
+        
+
+        circle_marker_84ad4bba4dd5a3ce1315ac0768a4495a.bindPopup(popup_1d8dc4a964392a4b3e32d7ef58cbaa13)
+        ;
+
+        
+    
+    
+            var circle_marker_f400aa05cae4ea58088a92dcdc4082b7 = L.circleMarker(
+                [32.8786467, -117.2230577],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83640a07e83987d9b5cfb6d21c9cc87c);
+        
+    
+        var popup_96f6e0f70a5ca931dec278b590b54b8e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fdc2b5e1440bd55837229d0d9d528304 = $(`<div id="html_fdc2b5e1440bd55837229d0d9d528304" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Moores Cancer Center</b><br>             🏷️ <i>Research</i><br>             📊 CV=0.75           </div></div>`)[0];
+                popup_96f6e0f70a5ca931dec278b590b54b8e.setContent(html_fdc2b5e1440bd55837229d0d9d528304);
+            
+        
+
+        circle_marker_f400aa05cae4ea58088a92dcdc4082b7.bindPopup(popup_96f6e0f70a5ca931dec278b590b54b8e)
+        ;
+
+        
+    
+    
+            var circle_marker_9b774bef3f3f10d232a43326bde150cf = L.circleMarker(
+                [32.8843896, -117.2391717],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83640a07e83987d9b5cfb6d21c9cc87c);
+        
+    
+        var popup_b329400ba4e37d4e52d037122bd379e6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_877bb69a9b8fd6a41f4005b8196f66d6 = $(`<div id="html_877bb69a9b8fd6a41f4005b8196f66d6" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>San Diego Supercomputer Center</b><br>             🏷️ <i>Research</i><br>             📊 CV=0.41           </div></div>`)[0];
+                popup_b329400ba4e37d4e52d037122bd379e6.setContent(html_877bb69a9b8fd6a41f4005b8196f66d6);
+            
+        
+
+        circle_marker_9b774bef3f3f10d232a43326bde150cf.bindPopup(popup_b329400ba4e37d4e52d037122bd379e6)
+        ;
+
+        
+    
+    
+            var circle_marker_398c6d1591fce96d96a7c2e58756ff0e = L.circleMarker(
+                [32.8800218, -117.2329402],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_83640a07e83987d9b5cfb6d21c9cc87c);
+        
+    
+        var popup_36fbd13a9d0b5151d832a6d0f6bfcf04 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1aad77ad4777fcbcdae65d3939ffbe7f = $(`<div id="html_1aad77ad4777fcbcdae65d3939ffbe7f" style="width: 100.0%; height: 100.0%;">           <div style='font-size:14px; text-align:center; padding:6px;'>             <b>Structural and Materials Engineering Building</b><br>             🏷️ <i>Research</i><br>             📊 CV=0.46           </div></div>`)[0];
+                popup_36fbd13a9d0b5151d832a6d0f6bfcf04.setContent(html_1aad77ad4777fcbcdae65d3939ffbe7f);
+            
+        
+
+        circle_marker_398c6d1591fce96d96a7c2e58756ff0e.bindPopup(popup_36fbd13a9d0b5151d832a6d0f6bfcf04)
+        ;
+
+        
+    
+</script>
+</html>
