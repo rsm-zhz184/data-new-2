@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Energy Usage Heatmaps</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body   { font-family: Arial, sans-serif; text-align: center; padding: 24px; }
-    h2     { margin: 0 0 18px; }
-    select { font-size: 16px; padding: 6px 10px; margin: 0 8px 18px; }
-    iframe { width: 94%; height: 640px; border: 1px solid #ccc; }
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 24px;
+    }
+    h2 {
+      margin-bottom: 18px;
+    }
+    select {
+      font-size: 16px;
+      padding: 6px 10px;
+      margin: 0 8px 18px;
+    }
+    iframe {
+      width: 94%;
+      height: 640px;
+      border: 1px solid #ccc;
+    }
   </style>
 </head>
 <body>
@@ -19,66 +33,62 @@
   <select id="utilSelect" onchange="loadMap()">
     <option value="electrical" selected>Electrical</option>
     <option value="gas">Gas</option>
-    <option value="hot_water">Hot Water</option>
-    <option value="solar_pv">Solar PV</option>
-    <option value="reclaimed_water">ReClaimed Water</option>
-    <option value="chilled_water">Chilled Water</option>
+    <option value="hot_water">Hot Water</option>
+    <option value="solar_pv">Solar PV</option>
+    <option value="reclaimed_water">ReClaimed Water</option>
+    <option value="chilled_water">Chilled Water</option>
   </select>
 
-  <!-- Compare to 下拉 -->
+  <!-- Compare 模式 -->
   <select id="compareSelect" onchange="loadMap()">
-    <option value="self"  selected>Self (CV)</option>
-    <option value="class">Same Class (Z‑score)</option>
+    <option value="self" selected>Self (CV)</option>
+    <option value="class">Same Class (Z‑score)</option>
   </select>
 
-  <!-- Classification 下拉，只触发图层显/隐 -->
+  <!-- Classification（由 classes.json 动态生成） -->
   <select id="classSelect" onchange="toggleClass()"></select>
 
-  <!-- 地图框 -->
+  <!-- 地图 iframe -->
   <iframe id="mapFrame"></iframe>
 
   <script>
-    // ① 读取分类列表，填充 Classification 下拉，并首次 load
+    // ① 加载分类列表填充下拉菜单
     fetch('classes.json')
       .then(res => res.json())
       .then(list => {
         const sel = document.getElementById('classSelect');
         sel.innerHTML = '<option value="all" selected>All</option>' +
-          list.map(c => {
-            const v = c.replace(/ /g,'_').toLowerCase();
-            return `<option value="${v}">${c}</option>`;
+          list.map(cls => {
+            const val = cls.replace(/ /g, '_').toLowerCase();
+            return `<option value="${val}">${cls}</option>`;
           }).join('');
-        loadMap();
+        loadMap(); // 初始地图加载
       })
       .catch(() => {
-        // 失败也给个 “All”
         document.getElementById('classSelect').innerHTML =
           '<option value="all" selected>All</option>';
         loadMap();
       });
 
-    // ② 切换 Utility/Compare → 重新加载对应的 HTML（Self/Class 两张）
+    // ② 切换 Utility / Compare 时重新加载 HTML 地图
     function loadMap() {
-      const util   = document.getElementById('utilSelect').value;
-      const cmp    = document.getElementById('compareSelect').value;
-      const frame  = document.getElementById('mapFrame');
-      frame.onload = toggleClass;
-      frame.src    = `${util}_${cmp}.html`;
+      const util = document.getElementById('utilSelect').value;
+      const cmp  = document.getElementById('compareSelect').value;
+      const iframe = document.getElementById('mapFrame');
+      iframe.onload = toggleClass; // 等地图加载完再筛选图层
+      iframe.src = `${util}_${cmp}.html`; // e.g., electrical_self.html
     }
 
-    // ③ 切换 Classification → 在当前图里显示对应图层
+    // ③ 切换分类时只在当前 iframe 地图中控制图层显隐
     function toggleClass() {
-      const clsVal = document.getElementById('classSelect').value;
-      const win    = document.getElementById('mapFrame').contentWindow;
+      const clsVal = document.getElementById('classSelect').value; // e.g., "lab"
+      const win = document.getElementById('mapFrame').contentWindow;
       if (!win?.map) return;
 
       Object.values(win.map._layers).forEach(layer => {
-        const name = layer?.options?.name;
-        if (!name) return;  // 跳过底图
-        // 只处理我们命名的 "{class}-{mode}"
+        const name = layer._name || "";
         if (!name.includes('-self') && !name.includes('-class')) return;
-
-        const show = clsVal === 'all' || name.startsWith(clsVal + '-');
+        const show = (clsVal === 'all') || name.startsWith(clsVal + '-');
         show ? win.map.addLayer(layer) : win.map.removeLayer(layer);
       });
     }
